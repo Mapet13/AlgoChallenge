@@ -1,6 +1,6 @@
 ﻿namespace AlgoChallange
 {
-    public class PrimaryNumbers
+    public class PrimeNumbers
     {
         public static bool[] SieveOfEratosthenes(uint length)
         {
