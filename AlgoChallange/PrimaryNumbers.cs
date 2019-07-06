@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace AlgoChallange
+﻿namespace AlgoChallange
 {
     public class PrimaryNumbers
     {
-        public static int[] SieveOfEratosthenes(int length)
+        public static bool[] SieveOfEratosthenes(uint length)
         {
-            int[] Sieve = new int[length];
+            bool[] Sieve = new bool[length];
 
             return Sieve;
         }
