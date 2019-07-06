@@ -4,9 +4,11 @@ namespace AlgoChallange
 {
     public class PrimaryNumbers
     {
-        public static void SieveOfEratosthenes()
+        public static int[] SieveOfEratosthenes(int length)
         {
-            throw new NotImplementedException();
+            int[] Sieve = new int[length];
+
+            return Sieve;
         }
     }
 }

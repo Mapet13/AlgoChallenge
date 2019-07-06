@@ -1,15 +1,20 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AlgoChallange;
 
-namespace AlgoTest
+namespace AlgoTest.PrimaryNumbersTest
 {
     [TestClass]
-    public class PrimaryNumbersTest
+    public class SieveOfEratosthenesTest
     {
         [TestMethod]
-        public void SieveOfEratosthenesTest()
+        public void CorrectOITest()
         {
-            PrimaryNumbers.SieveOfEratosthenes();
+            int length = 10;
+            var result = PrimaryNumbers.SieveOfEratosthenes(length);
+
+            Assert.IsTrue(result is int[]);
+            Assert.IsTrue(result.Length == length);
         }
+
     }
 }
