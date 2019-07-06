@@ -7,14 +7,15 @@ namespace AlgoTest.PrimaryNumbersTest
     public class SieveOfEratosthenesTest
     {
         [TestMethod]
-        public void CorrectOITest()
+        public void CorrectOITest_ReturnedTypeIsIntArray()
         {
-            int length = 10;
-            var result = PrimaryNumbers.SieveOfEratosthenes(length);
-
-            Assert.IsTrue(result is int[]);
-            Assert.IsTrue(result.Length == length);
+            Assert.IsInstanceOfType(PrimaryNumbers.SieveOfEratosthenes(5), typeof(int[]));
         }
 
+        [TestMethod]
+        public void CorrectOITest_LengthOfReturnedArray()
+        {
+            Assert.AreEqual(5, PrimaryNumbers.SieveOfEratosthenes(5).Length);
+        }
     }
 }
