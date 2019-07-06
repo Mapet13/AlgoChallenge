@@ -30,5 +30,21 @@ namespace AlgoTest.PrimaryNumbersTest
 
             Assert.IsTrue(nine.SequenceEqual(nineFromTen));
         }
+
+        [TestMethod]
+        public void ReturnedValueTest_CorrectedPrimesTo20()
+        {
+            uint[] primesTo20 = new uint[] { 2, 3, 5, 7, 11, 13, 17, 19 };
+            bool[] correctSieveOfEratosthenes = new bool[21];
+            bool[] sieveOfEratosthenes = PrimaryNumbers.SieveOfEratosthenes(20);
+
+            foreach(uint i in primesTo20)
+            {
+                correctSieveOfEratosthenes[i] = true;
+            }
+
+
+            Assert.IsTrue(correctSieveOfEratosthenes.SequenceEqual(sieveOfEratosthenes));
+        }
     }
 }
