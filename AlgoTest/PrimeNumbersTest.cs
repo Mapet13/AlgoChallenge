@@ -21,8 +21,8 @@ namespace AlgoTest.PrimeNumbersTest
         }
 
 
-        [TestMethod] // I should change this name, but no idea for what
-        public void ReturnedValueTest_IsSameForEveryCall()
+        [TestMethod]
+        public void ReturnedValueTest_EqualityOfTheFirstElementsFrom2DifferentSieves()
         {
             bool[] nineFromTen = new bool[10];
             bool[] nine = PrimeNumbers.SieveOfEratosthenes(9);
