@@ -1,6 +1,6 @@
 ﻿namespace AlgoChallange.Numerical
 {
-    public interface IWayToCheckIfIsPrime
+    public interface IPrimalityTester
     {
         bool IsPrime(uint n);
     }

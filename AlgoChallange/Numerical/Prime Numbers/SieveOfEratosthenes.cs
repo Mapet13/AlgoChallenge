@@ -2,7 +2,7 @@
 
 namespace AlgoChallange.Numerical
 {
-    public class SieveOfEratosthenes : IWayToCheckIfIsPrime
+    public class SieveOfEratosthenes : IPrimalityTester
     {
         public bool IsPrime(uint n) => GenerateSieve(n)[n];
 

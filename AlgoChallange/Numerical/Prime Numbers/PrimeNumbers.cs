@@ -2,6 +2,6 @@
 {
     public class PrimeNumbers
     {
-        public static bool IsPrime(uint n, IWayToCheckIfIsPrime isPrimeChecker) => isPrimeChecker.IsPrime(n);
+        public static bool IsPrime(uint n, IPrimalityTester isPrimeChecker) => isPrimeChecker.IsPrime(n);
     }
 }
