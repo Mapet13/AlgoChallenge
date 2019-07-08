@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgoChallange.Combinatorics;
+using AlgoChallange.Combinatorial;
 
-namespace AlgoTest.Combinatorics
+namespace AlgoTest.Combinatorial
 {
     [TestClass]
     public class BinomialCoefficientFactorialWayTest

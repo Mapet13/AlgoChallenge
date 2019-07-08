@@ -1,4 +1,4 @@
-﻿namespace AlgoChallange.Combinatorics
+﻿namespace AlgoChallange.Combinatorial
 {
     public class BinomialCoefficient
     {

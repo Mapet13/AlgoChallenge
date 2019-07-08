@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgoChallange.Combinatorics
+namespace AlgoChallange.Combinatorial
 {
     public class BinomialCoefficientFactorialWay : IBinomialCoefficientCalculator
     {
