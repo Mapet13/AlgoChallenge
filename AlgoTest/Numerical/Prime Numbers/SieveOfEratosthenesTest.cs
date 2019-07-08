@@ -9,14 +9,14 @@ namespace AlgoTest.Numerical.PrimeNumbers
     public class SieveOfEratosthenesTest
     {
         [TestMethod]
-        public void OITest_ReturnedTypeIsBoolArray()
+        public void IOTest_ReturnedTypeIsBoolArray()
         {
             sieve = new SieveOfEratosthenes();
             Assert.IsInstanceOfType(sieve.GenerateSieve(5), typeof(bool[]));
         }
 
         [TestMethod]
-        public void OITest_LengthOfReturnedArray()
+        public void IOTest_LengthOfReturnedArray()
         {
             sieve = new SieveOfEratosthenes();
             Assert.AreEqual(6, sieve.GenerateSieve(5).Length);
