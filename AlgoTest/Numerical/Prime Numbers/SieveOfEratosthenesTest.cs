@@ -1,7 +1,7 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgoChallange.Numerical;
 using System;
 using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using AlgoChallange.Numerical;
 
 namespace AlgoTest.Numerical.PrimeNumbers
 {
@@ -40,9 +40,9 @@ namespace AlgoTest.Numerical.PrimeNumbers
             sieve = new SieveOfEratosthenes();
             uint[] primesTo20 = new uint[] { 2, 3, 5, 7, 11, 13, 17, 19 };
             bool[] correctSieveOfEratosthenes = new bool[21];
-            bool[] sieveOfEratosthenes = sieve.GenerateSieve(20); 
+            bool[] sieveOfEratosthenes = sieve.GenerateSieve(20);
 
-            foreach(uint i in primesTo20)
+            foreach (uint i in primesTo20)
             {
                 correctSieveOfEratosthenes[i] = true;
             }

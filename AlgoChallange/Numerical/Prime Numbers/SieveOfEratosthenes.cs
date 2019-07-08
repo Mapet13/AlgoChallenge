@@ -15,7 +15,7 @@ namespace AlgoChallange.Numerical
             {
                 if (sieve[i])
                 {
-                    for (uint k = 2; k*i <= length; ++k)
+                    for (uint k = 2; k * i <= length; ++k)
                     {
                         sieve[i * k] = false;
                     }
