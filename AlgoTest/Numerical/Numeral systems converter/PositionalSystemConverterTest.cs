@@ -115,6 +115,16 @@ namespace AlgoTest.Numerical.NumeralSystemsConverter
             Assert.AreEqual(hex, converter.Convert(oct, 8, 16));
         }
 
+        [TestMethod]
+        public void ReturnedValueTest_nontrivialBases_6and13()
+        {
+            converter = new PositionalSystemConverter();
+            string inNum_6 = "543";                         // 207 in decimal 
+            string outNum_13 = "12C";
+
+            Assert.AreEqual(outNum_13, converter.Convert(inNum_6, 6, 13));
+        }
+
         private string GenerateRandomBinaryString()
         {
             StringBuilder builder = new StringBuilder("1");
