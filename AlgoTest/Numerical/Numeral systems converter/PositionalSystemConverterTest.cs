@@ -79,7 +79,7 @@ namespace AlgoTest.Numerical.NumeralSystemsConverter
         public void ReturnedValueTest_DecimalToBinary()
         {
             converter = new PositionalSystemConverter();
-            string binary = "011010";
+            string binary = "11010";
             int dec = 26;
 
             Assert.AreEqual(binary, converter.Convert(dec.ToString(), 10, 2));
@@ -117,12 +117,12 @@ namespace AlgoTest.Numerical.NumeralSystemsConverter
 
         private string GenerateRandomBinaryString()
         {
-            StringBuilder builder = new StringBuilder();
+            StringBuilder builder = new StringBuilder("1");
             Random random = new Random();
             int length = new Random().Next(1, 100);
             for (int i = 0; i < length; ++i)
             {
-                builder.Append(random.Next(0, 1).ToString());
+                builder.Append(random.Next(0, 2).ToString());
             }
 
             return builder.ToString();

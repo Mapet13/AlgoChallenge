@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace AlgoChallange.Numerical
 {
@@ -13,6 +14,7 @@ namespace AlgoChallange.Numerical
         public string Convert(int number, int outBase)
         {
             if (AreArgumentCorrect(outBase)) throw new ArgumentException(); //so many same throws
+
             return FromDecimal(number, outBase);
         }
 
@@ -22,6 +24,7 @@ namespace AlgoChallange.Numerical
         public int Convert(string number, int inBase)
         {
             if (AreArgumentCorrect(inBase)) throw new ArgumentException();
+
             return ToDecimal(number, inBase);
         }
 
@@ -30,18 +33,20 @@ namespace AlgoChallange.Numerical
         /// </summary>
         public string Convert(string number, int inBase, int outBase)
         {
-            if (inBase == outBase) return number;
             number = DeleteNonsignificantZeroes(number);
+
+            if (inBase == outBase) return number;
             if (number == "0") return "0";
             if (AreArgumentsCorrect(inBase, outBase)) throw new ArgumentException();
 
             return FromDecimal(ToDecimal(number, inBase), outBase);
         }
 
-        private int ToDecimal(string number, int inBase) //How wto clean it???
+        private int ToDecimal(string number, int inBase)
         {
-            if (inBase == 10) return int.Parse(number);
             number = DeleteNonsignificantZeroes(number);
+
+            if (inBase == 10) return int.Parse(number);
             if (number == "0") return 0;
 
             int result = 0;
@@ -54,6 +59,23 @@ namespace AlgoChallange.Numerical
             return result;
         }
 
+        private string FromDecimal(int number, int outBase)
+        {
+            if (outBase == 10) return number.ToString();
+            if (number == 0) return "0";
+
+            StringBuilder result = new StringBuilder();
+            int mod;
+            while (number > 0)
+            {
+                mod = number % outBase;
+                result.Insert(0, signs[mod]);
+                number /= outBase;
+            }
+
+            return result.ToString();
+        }
+
         private string DeleteNonsignificantZeroes(string number)
         {
             while (number.StartsWith("0") && number.Length > 1)
@@ -62,14 +84,6 @@ namespace AlgoChallange.Numerical
             }
 
             return number;
-        }
-
-        private string FromDecimal(int number, int outBase)
-        {
-            if (outBase == 10) return number.ToString();
-            if (number == 0) return "0";
-
-            return number.ToString(); ;
         }
 
         private bool AreArgumentsCorrect(int inBase, int outBase)
