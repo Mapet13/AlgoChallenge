@@ -37,11 +37,11 @@ namespace AlgoTest.Combinatorial
         public void ReturnedValueTest_recurrenceRelation()
         {
             BinomialCoefficien = new BinomialCoefficientFactorialWay();
-            uint n = (uint)new Random().Next(1, 33);
-            uint k = (uint)new Random().Next(1, (int)n);
+            uint n = (uint)new Random().Next(2, 20);
+            uint k = (uint)new Random().Next(1, (int)n-1);
 
             uint expected = BinomialCoefficien.Calculate(n, k);
-            uint actual = BinomialCoefficien.Calculate(n - 1, k) + BinomialCoefficien.Calculate(n - 1, k - 1); ;
+            uint actual = BinomialCoefficien.Calculate(n - 1, k) + BinomialCoefficien.Calculate(n - 1, k - 1);
              
             Assert.AreEqual(expected, actual);
         }
