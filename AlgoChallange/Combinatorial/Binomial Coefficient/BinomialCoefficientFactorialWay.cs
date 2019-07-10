@@ -8,6 +8,7 @@ namespace AlgoChallange.Combinatorial
         public ulong Calculate(uint n, uint k)
         {
             if (n < k) throw new ArgumentException("N can't be less than K");
+            if (k == 0 || k == n) return 1;
 
             return GetResult(n, k);
         }
