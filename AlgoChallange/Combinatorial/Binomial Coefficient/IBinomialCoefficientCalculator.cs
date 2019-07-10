@@ -2,6 +2,6 @@
 {
     public interface IBinomialCoefficientCalculator
     {
-        ulong Calculate(ulong n, ulong k);
+        ulong Calculate(uint n, uint k);
     }
 }

@@ -53,7 +53,8 @@ namespace AlgoChallange.Numerical
             int length = number.Length;
             for (int i = 0; i < length; ++i)
             {
-                result += Pow(inBase, length - 1 - i) * signs.IndexOf(number[i]);
+                uint power = (uint)length - 1 - (uint)i;
+                result += (int)Exponentiation.Calculate((uint)inBase, power, exponentiationCalculator) * signs.IndexOf(number[i]);
             }
 
             return result;
@@ -95,18 +96,7 @@ namespace AlgoChallange.Numerical
             return arg < 2 || arg > 16;
         }
 
-        public int Pow(int num, int power)
-        {
-            if (power < 0) throw new ArgumentException("Negative powers are not supported");
-            if (power == 0) return 1;
-            if (power % 2 == 0)
-            {
-                int val = Pow(num, power / 2);
-                return val * val;
-            }
-            return num * Pow(num, power - 1);
-        }
-
+        private readonly IExponentiationCalculator exponentiationCalculator = new BinaryExponentiation();
         private const string signs = "0123456789ABCDEF";
 
     }

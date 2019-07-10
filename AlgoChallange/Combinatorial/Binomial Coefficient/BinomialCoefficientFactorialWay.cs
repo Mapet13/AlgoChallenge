@@ -1,27 +1,27 @@
 ﻿using System;
+using AlgoChallange.Numerical;
 
 namespace AlgoChallange.Combinatorial
 {
     public class BinomialCoefficientFactorialWay : IBinomialCoefficientCalculator
     {
-        public ulong Calculate(ulong n, ulong k)
+        public ulong Calculate(uint n, uint k)
         {
             if (n < k) throw new ArgumentException("N can't be less than K");
 
-            return Factorial(n) / (Factorial(k) * Factorial(n - k));
+            return GetResult(n, k);
         }
 
-        private ulong Factorial(ulong n)
-        { 
-            if (n > 20) throw new ArgumentException("Arguments are to big");
-            if (n == 0) return 1;
-            if (n == 1 || n == 2) return n;
-
-            ulong result = 2;
-            for (ulong i = 3; i <= n; ++i)
-                result *= i;
-
-            return result;
+        private ulong GetResult(uint n, uint k)
+        {
+            return GetFactorial(n) / (GetFactorial(k) * GetFactorial(n - k));
         }
+
+        private ulong GetFactorial(uint n)
+        {
+            return Factorial.Calculate(n, factorialCalculator);
+        }
+
+        private readonly IFactorialCalculator factorialCalculator = new FactorialLoopWay();
     }
 }

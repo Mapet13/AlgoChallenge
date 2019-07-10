@@ -11,7 +11,7 @@ namespace AlgoTest.Combinatorial
         public void ReturnedValueTest_ForNand0()
         {
             BinomialCoefficien = new BinomialCoefficientFactorialWay();
-            ulong n = (ulong)new Random().Next(1, 20);
+            uint n = (uint)new Random().Next(1, 20);
 
             Assert.AreEqual((ulong)1, BinomialCoefficien.Calculate(n, 0));
         }
@@ -28,7 +28,7 @@ namespace AlgoTest.Combinatorial
         public void IOTest_ArgumentBiggerThan20()
         {
             BinomialCoefficien = new BinomialCoefficientFactorialWay();
-            ulong n = (ulong)new Random().Next(21, 100);
+            uint n = (uint)new Random().Next(21, 100);
 
             Assert.AreEqual(0, BinomialCoefficien.Calculate(n, 0));
         }
@@ -37,8 +37,8 @@ namespace AlgoTest.Combinatorial
         public void ReturnedValueTest_recurrenceRelation()
         {
             BinomialCoefficien = new BinomialCoefficientFactorialWay();
-            ulong n = (ulong)new Random().Next(3, 20);
-            ulong k = (ulong)new Random().Next(2, (int)n-1);
+            uint n = (uint)new Random().Next(3, 20);
+            uint k = (uint)new Random().Next(2, (int)n-1);
 
             ulong expected = BinomialCoefficien.Calculate(n, k);
             ulong actual = BinomialCoefficien.Calculate(n - 1, k) + BinomialCoefficien.Calculate(n - 1, k - 1);
