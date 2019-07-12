@@ -14,3 +14,4 @@
   * Numeral Systems Converter
   * Prime Numbers
     * Sieve Of Eratosthenes
+  * Perfect Number Test
