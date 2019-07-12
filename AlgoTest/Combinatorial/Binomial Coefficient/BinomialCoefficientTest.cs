@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AlgoChallange.Combinatorial;
 
-namespace AlgoTest.Combinatorial
+namespace AlgoTest.Combinatorial.BinomialCoefficient
 {
     
     public class BinomialCoefficientTest<T> 
