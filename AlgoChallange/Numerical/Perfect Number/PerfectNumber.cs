@@ -1,9 +1,9 @@
 ﻿namespace AlgoChallange.Numerical
 {
     public class PerfectNumber
-    { 
+    {
         public bool IsPerfect(ulong n)
-        { 
+        {
             if (IsOdd(n) || n == 0)
                 return false;
             return IsEvenPerfect(n);
@@ -27,6 +27,5 @@
         }
 
         private bool IsOdd(ulong n) => n % 2 == 1;
-
     }
 }

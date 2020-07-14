@@ -91,6 +91,7 @@ namespace AlgoChallange.Numerical
         {
             return AreArgumentCorrect(inBase) || AreArgumentCorrect(outBase);
         }
+
         private bool AreArgumentCorrect(int arg)
         {
             return arg < 2 || arg > 16;
@@ -98,6 +99,5 @@ namespace AlgoChallange.Numerical
 
         private readonly IExponentiationCalculator exponentiationCalculator = new BinaryExponentiation();
         private const string signs = "0123456789ABCDEF";
-
     }
 }

@@ -1,5 +1,5 @@
-﻿using System;
-using AlgoChallange.Numerical;
+﻿using AlgoChallange.Numerical;
+using System;
 
 namespace AlgoChallange.Combinatorial
 {

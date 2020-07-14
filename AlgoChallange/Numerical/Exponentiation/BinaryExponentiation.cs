@@ -4,7 +4,6 @@ namespace AlgoChallange.Numerical
 {
     public class BinaryExponentiation : IExponentiationCalculator
     {
-
         public ulong Calculate(uint n, uint power)
         {
             if (power < 0) throw new ArgumentException("Negative powers are not supported");
@@ -22,6 +21,5 @@ namespace AlgoChallange.Numerical
             }
             return n * Calculate(n, power - 1);
         }
-
     }
 }

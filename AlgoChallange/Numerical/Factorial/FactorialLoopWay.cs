@@ -4,7 +4,6 @@ namespace AlgoChallange.Numerical
 {
     public class FactorialLoopWay : IFactorialCalculator
     {
-
         public ulong Calculate(uint n)
         {
             if (n > 20) throw new ArgumentException("Arguments are to big");
@@ -22,6 +21,5 @@ namespace AlgoChallange.Numerical
 
             return result;
         }
-
     }
 }
