@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgoChallange.Combinatorial;
+﻿using AlgoChallange.Combinatorial;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgoTest.Combinatorial.BinomialCoefficient
 {
@@ -7,6 +7,5 @@ namespace AlgoTest.Combinatorial.BinomialCoefficient
     public class BinomialCoefficientRecursiveWayTest
         : BinomialCoefficientTest<BinomialCoefficientRecursiveWay>
     {
-
     }
 }

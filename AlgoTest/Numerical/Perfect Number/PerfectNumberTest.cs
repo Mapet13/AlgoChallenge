@@ -1,19 +1,21 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Algo = AlgoChallange.Numerical;
 
 namespace AlgoTest.Numerical.PerfectNumber
 {
     [TestClass]
-    public class PerfectNumberTest 
+    public class PerfectNumberTest
     {
+        [TestInitialize]
+        public void InitTest() => perfectNumber = new Algo.PerfectNumber();
+
         [TestMethod]
         [DataRow(6u)]
         [DataRow(28u)]
         [DataRow(496u)]
         public void ReturedValueTest_CorrectPerfectNumbersUpTo1000(uint n)
         {
-            perfectNumber = new Algo.PerfectNumber();
             Assert.IsTrue(perfectNumber.IsPerfect(n));
         }
 
@@ -21,7 +23,6 @@ namespace AlgoTest.Numerical.PerfectNumber
         public void ReturnedValueTest_RandomNotPerfectNumberUpTo1000()
         {
             int n;
-            perfectNumber = new Algo.PerfectNumber();
 
             do n = new Random().Next(1, 1000);
             while (n == 6 || n == 28 || n == 496);
@@ -29,6 +30,6 @@ namespace AlgoTest.Numerical.PerfectNumber
             Assert.IsFalse(perfectNumber.IsPerfect((ulong)n));
         }
 
-        private Algo.PerfectNumber perfectNumber = new Algo.PerfectNumber();
+        Algo.PerfectNumber perfectNumber;
     }
 }
