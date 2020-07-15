@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgoChallange.Combinatorial
+namespace AlgoChallenge.Combinatorial
 {
     public class BinomialCoefficientRecursiveWay : IBinomialCoefficientCalculator
     {

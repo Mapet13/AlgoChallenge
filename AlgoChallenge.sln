@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoChallange", "AlgoChallange\AlgoChallange.csproj", "{577A8955-E713-455E-ABCB-39E3818CCC3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoChallenge", "AlgoChallenge\AlgoChallenge.csproj", "{577A8955-E713-455E-ABCB-39E3818CCC3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoTest", "AlgoTest\AlgoTest.csproj", "{F6A2EDAC-E793-4AA9-9C89-7BDCC8E1371E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoTest", "AlgoTest\AlgoTest.csproj", "{F6A2EDAC-E793-4AA9-9C89-7BDCC8E1371E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

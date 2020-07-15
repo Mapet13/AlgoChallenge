@@ -13,11 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AlgoChallange\AlgoChallange.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Cluster Analysis\K-means\" />
+    <ProjectReference Include="..\AlgoChallenge\AlgoChallenge.csproj" />
   </ItemGroup>
 
 </Project>

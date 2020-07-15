@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace AlgoChallange.Numerical
+namespace AlgoChallenge.Numerical
 {
     /// <summary>
     /// Supports system whose base is an integer from 2 to 16

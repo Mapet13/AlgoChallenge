@@ -1,4 +1,4 @@
-﻿namespace AlgoChallange.Numerical
+﻿namespace AlgoChallenge.Numerical
 {
     public static class PrimeNumbers
     {

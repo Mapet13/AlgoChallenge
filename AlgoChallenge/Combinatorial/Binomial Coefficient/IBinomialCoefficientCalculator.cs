@@ -1,4 +1,4 @@
-﻿namespace AlgoChallange.Combinatorial
+﻿namespace AlgoChallenge.Combinatorial
 {
     public interface IBinomialCoefficientCalculator
     {

@@ -1,4 +1,4 @@
-using AlgoChallange.Numerical;
+using AlgoChallenge.Numerical;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Text;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Algo = AlgoChallange.Numerical;
+using Algo = AlgoChallenge.Numerical;
 
 namespace AlgoTest.Numerical.PerfectNumber
 {

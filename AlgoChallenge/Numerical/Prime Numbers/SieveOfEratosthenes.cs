@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgoChallange.Numerical
+namespace AlgoChallenge.Numerical
 {
     public class SieveOfEratosthenes : IPrimalityTester
     {

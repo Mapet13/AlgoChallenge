@@ -1,4 +1,4 @@
-﻿using AlgoChallange.Combinatorial;
+﻿using AlgoChallenge.Combinatorial;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgoTest.Combinatorial.BinomialCoefficient

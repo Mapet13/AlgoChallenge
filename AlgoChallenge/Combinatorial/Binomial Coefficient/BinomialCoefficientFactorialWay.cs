@@ -1,7 +1,7 @@
-﻿using AlgoChallange.Numerical;
+﻿using AlgoChallenge.Numerical;
 using System;
 
-namespace AlgoChallange.Combinatorial
+namespace AlgoChallenge.Combinatorial
 {
     public class BinomialCoefficientFactorialWay : IBinomialCoefficientCalculator
     {
