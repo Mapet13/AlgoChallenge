@@ -27,7 +27,7 @@ namespace AlgoChallenge.Cluster_Analysis.K_means
 
                 RetstartClusterState();
                 var dataInClusters = AssignClustersToData(centroids);
-                centroids = MoveCetroids(dataInClusters, centroids);
+                centroids = MoveCentroids(dataInClusters, centroids);
             } while (Converges() && iterationCount < maxIterations);
 
             return Clusters;
@@ -108,7 +108,7 @@ namespace AlgoChallenge.Cluster_Analysis.K_means
             return Math.Sqrt(dist);
         }
 
-        private double[][] MoveCetroids(List<uint>[] dataInClusters, double[][] centorids)
+        private double[][] MoveCentroids(List<uint>[] dataInClusters, double[][] centorids)
         {
             double[][] newCentroids = CreateCentroidsArray();
 
@@ -152,7 +152,7 @@ namespace AlgoChallenge.Cluster_Analysis.K_means
             for (uint i = 0; i < data.Length; i++)
                 dataInClusters[random.Next(0, (int)(k - 1))].Add(i);
 
-            return MoveCetroids(dataInClusters, CreateCentroidsArray());
+            return MoveCentroids(dataInClusters, CreateCentroidsArray());
         }
 
         uint k;

@@ -36,7 +36,7 @@ namespace AlgoTest.Cluster_Analysis.K_means
         }
 
         [TestMethod]
-        public void ShoudlRunCoretly_WhenPassOneDimensionalData()
+        public void ShouldRunCorrectly_WhenPassOneDimensionalData()
         {
             var data = new double[5][];
             data[0] = new double[] { 1 };
@@ -51,7 +51,7 @@ namespace AlgoTest.Cluster_Analysis.K_means
         }
 
         [TestMethod]
-        public void ShoudlRunCoretly_WhenPassTwoDimensionalData()
+        public void ShouldRunCorrectly_WhenPassTwoDimensionalData()
         {
             var data = new double[5][];
             data[0] = new double[] { 1, 1 };
@@ -66,7 +66,7 @@ namespace AlgoTest.Cluster_Analysis.K_means
         }
 
         [TestMethod]
-        public void ShoudlRunCoretly_WhenPassMultiDimensionalData()
+        public void ShouldRunCorrectly_WhenPassMultiDimensionalData()
         {
             var data = new double[5][];
             data[0] = new double[] { 1, 1, 1, 1, 1 };
@@ -81,7 +81,7 @@ namespace AlgoTest.Cluster_Analysis.K_means
         }
 
         [TestMethod]
-        public void ShoudlReturnAllDataInOneCLuster_WhenKIsEquealToOne()
+        public void ShouldReturnAllDataInOneCLuster_WhenKIsEqualToOne()
         {
             var data = new double[5][];
             data[0] = new double[] { 1, 1 };
