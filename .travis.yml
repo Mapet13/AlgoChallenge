@@ -1,7 +1,7 @@
 language: csharp
 solution: AlgoChallenge.sln
 install:
-  - nuget restore solution-name.sln
+  - nuget restore AlgoChallenge.sln
 script:
   - dotnet restore
   - dotnet test
