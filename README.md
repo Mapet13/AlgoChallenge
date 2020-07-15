@@ -1,6 +1,8 @@
 # AlgoChallenge
 *My Implementation of some algorithms in C#*
 
+[![Build Status](https://travis-ci.com/Mapet13/AlgoChallenge.svg?branch=C%23)](https://travis-ci.com/Mapet13/AlgoChallenge)
+
 #### List of algorithms:
 * Cluster Analysis:
   * K-means
