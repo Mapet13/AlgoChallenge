@@ -1,7 +1,10 @@
 # AlgoChallenge
-*Implementation of some algorithms in C# by Jakub Sordyl*
+*My Implementation of some algorithms in C#*
 
-#### Currently Supported:
+#### List of algorithms:
+* Cluster Analysis:
+  * K-means
+    * Lloyds Algorithm
 * Combinatorial Algorithms:
   * Binomial Coefficient
     * Recursive Way
