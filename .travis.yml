@@ -1,7 +1,6 @@
 os: windows
 language: csharp
 mono: none
-dotnet: 3.0.100
 solution: AlgoChallenge.sln
 script:
   - choco install dotnetcore-sdk
