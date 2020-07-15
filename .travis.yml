@@ -1,6 +1,7 @@
 language: csharp
 mono: none
-dotnet: 2.1.502
+dist: trusty
+dotnet: 3.0.100
 solution: AlgoChallenge.sln
 script:
   - dotnet restore
