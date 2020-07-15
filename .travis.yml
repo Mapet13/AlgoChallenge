@@ -1,5 +1,8 @@
 language: csharp
+dist: trusty
+mono: none
 solution: AlgoChallenge.sln
+dotnet: 2.1.502
 install:
   - nuget restore AlgoChallenge.sln
 script:
